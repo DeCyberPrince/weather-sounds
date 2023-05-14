@@ -1,0 +1,1 @@
+export type DefinedWeather = 'sunny' | 'rainy' | 'snowy'

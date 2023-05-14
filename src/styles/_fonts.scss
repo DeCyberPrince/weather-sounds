@@ -1,0 +1,22 @@
+$robotoFonts: 100 normal "Roboto-Thin.ttf",
+100 italic "Roboto-ThinItalic.ttf",
+300 normal "Roboto-Light.ttf",
+300 italic "Roboto-LightItalic.ttf",
+400 normal "Roboto-Regular.ttf",
+400 italic "Roboto-Italic.ttf",
+500 normal "Roboto-Medium.ttf",
+500 italic "Roboto-MediumItalic.ttf",
+700 normal "Roboto-Bold.ttf",
+700 italic "Roboto-BoldItalic.ttf",
+900 normal "Roboto-Black.ttf",
+900 italic "Roboto-BlackItalic.ttf";
+
+@each $weight, $style, $filename in $robotoFonts {
+  @font-face {
+    font-family: "Roboto";
+    font-weight: $weight;
+    font-style: $style;
+    src: local("Roboto"), url("../assets/fonts/#{$filename}") format("truetype");
+  }
+
+}
